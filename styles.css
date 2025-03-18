@@ -206,7 +206,7 @@ h2::after {
     background: #008F7A;
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 196, 180, 0.5);
-    color: #ffdd57;
+    color: #fff; /* Changed from #ffdd57 to #fff */
 }
 
 /* Skills, Projects, Certifications, Contact Intro */
@@ -355,7 +355,7 @@ h2::after {
     padding: 0;
 }
 
-.skill-card ul li {
+.skill-card ul会导致 li {
     font-weight: 300;
     color: #555;
     margin-bottom: 0.5rem;
