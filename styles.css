@@ -159,6 +159,56 @@ h2::after {
     border-radius: 5px;
 }
 
+/* Welcome Section (Specific to index.html) */
+.welcome-section {
+    padding: 3rem 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Ensures it takes up some vertical space */
+}
+
+.welcome-content {
+    text-align: center;
+    max-width: 800px; /* Limits content width for readability */
+}
+
+.welcome-content h2 {
+    margin-top: 0; /* Overrides global h2 margin */
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #555;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1s ease;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #00C4B4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 196, 180, 0.3);
+}
+
+.learn-more-btn:hover {
+    background: #008F7A;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 196, 180, 0.5);
+    color: #ffdd57;
+}
+
 /* Skills, Projects, Certifications, Contact Intro */
 .skills-intro, .projects-intro, .certifications-intro, .contact-intro, .about-intro {
     text-align: center;
@@ -403,6 +453,13 @@ h2::after {
 }
 
 /* Certifications Section */
+.certifications-content {
+    padding: 2rem 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
 .certification-card .cert-icon {
     width: 80px;
     height: 80px;
@@ -686,6 +743,20 @@ footer .container {
     
     .social-links a {
         font-size: 1.8rem;
+    }
+    
+    .welcome-section {
+        padding: 2rem 0;
+        min-height: auto; /* Adjusts height for smaller screens */
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+    }
+    
+    .learn-more-btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
     }
 }
 
